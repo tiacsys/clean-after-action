@@ -1,6 +1,6 @@
-name: 'Clean workspace post step'
-description: 'Cleans up the workspace after build finishes'
-author: 'mickem / FraBle'
+name: 'Cleanup self-hosted runner workspace at the end of job'
+description: 'Cleans up the self-hosted runner workspace after build finishes'
+author: 'mickem+FraBle+danielefranceschi'
 branding:
   icon: 'delete'
   color: 'red'

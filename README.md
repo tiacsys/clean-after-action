@@ -18,8 +18,8 @@ jobs:
     runs-on: onprem
     steps:
     - uses: tiacsys/clean-after-action@v3
-    - uses: actions/checkout@v3
-    - uses: actions/cache@v3
+    - uses: actions/checkout@v4
+    - uses: actions/cache@v4
     # ...
 ```
 

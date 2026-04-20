@@ -5,7 +5,7 @@ Clean up the work directory for self hosted runners after they finish building.
 ## Example usage
 
 ```yaml
-- uses: tiacsys/clean-after-action@v3
+- uses: tiacsys/clean-after-action@v4
 ```
 
 It is important that this is run before any caching tasks as cleanups are run in reverse order (and you do not want to cleanup before the caching is saved).
@@ -17,9 +17,9 @@ jobs:
   build:
     runs-on: onprem
     steps:
-    - uses: tiacsys/clean-after-action@v3
-    - uses: actions/checkout@v4
-    - uses: actions/cache@v4
+    - uses: tiacsys/clean-after-action@v4
+    - uses: actions/checkout@v6
+    - uses: actions/cache@v5
     # ...
 ```
 
@@ -30,7 +30,7 @@ jobs:
 Set this to true to prevent the `.git ` folder to be deleted.
 
 ```yaml
-- uses: tiacsys/clean-after-action@v3
+- uses: tiacsys/clean-after-action@v4
   with:
     keep-git: true
 ```
